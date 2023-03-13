@@ -1,1 +1,18 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+a {
+    transition: color 0.4s ease;
+
+    &:hover {
+        color: $darkColor;
+    }
+}
+
+.intro {
+    margin-bottom: rem(60);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: rem(30);
+}
