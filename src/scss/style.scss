@@ -32,7 +32,7 @@ $maxWidth: 1920;
 $maxWidthContainer: 1440;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 15;
+$containerPadding: 30;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -52,7 +52,6 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
-	background-color: #f3f3f3;
 	line-height: math.div(19, 16);
 
 	// Скролл заблокирован

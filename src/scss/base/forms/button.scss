@@ -3,13 +3,18 @@
 
 .button {
 	display: inline-flex;
-	padding: rem(9) rem(13);
-	background-color: $mainColor;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 10px;
-	font-weight: 500;
-	font-size: rem(18);
+	padding: rem(17) rem(50);
+
+	background: linear-gradient(177.43deg, rgba(255, 255, 255, 0.45) 4.36%, rgba(255, 255, 255, 0) 103.95%), #248099;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16), 0px 3px 4px rgba(0, 0, 0, 0.16), 0px 1px 5px rgba(0, 0, 0, 0.24);
+
+	white-space: nowrap;
+	font-weight: 700;
+	font-size: rem(13);
 	color: #fff;
+	text-transform: uppercase;
 
 	@media (any-hover: hover) {
 		&:hover {

@@ -27,15 +27,15 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.cars__slider')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.partners__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.cars__slider', { // Указываем скласс нужного слайдера
+		new Swiper('.partners__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая 
-			modules: [Navigation, Scrollbar],
+			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 3,
+			slidesPerView: 5,
 			spaceBetween: 32,
 			autoHeight: true,
 			speed: 800,
@@ -43,7 +43,7 @@ function initSliders() {
 			//touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,
-			//preloadImages: false,
+			preloadImages: true,
 			//lazy: true,
 
 			/*
@@ -64,11 +64,11 @@ function initSliders() {
 			*/
 
 			// Скроллбар
-			
-			scrollbar: {
+
+			/* scrollbar: {
 				el: '.swiper-scrollbar',
 				draggable: true,
-			},
+			}, */
 
 			// Кнопки "влево/вправо"
 			navigation: {
@@ -104,15 +104,15 @@ function initSliders() {
 			}
 		});
 	}
-	if (document.querySelector('.reviews__slider')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.videos__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.reviews__slider', { // Указываем скласс нужного слайдера
+		new Swiper('.videos__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая 
-			modules: [Navigation, Scrollbar],
+			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 3,
+			slidesPerView: 6,
 			spaceBetween: 32,
 			autoHeight: true,
 			speed: 800,
@@ -120,7 +120,7 @@ function initSliders() {
 			//touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,
-			//preloadImages: false,
+			preloadImages: true,
 			//lazy: true,
 
 			/*
@@ -141,11 +141,11 @@ function initSliders() {
 			*/
 
 			// Скроллбар
-			
-			scrollbar: {
+
+			/* scrollbar: {
 				el: '.swiper-scrollbar',
 				draggable: true,
-			},
+			}, */
 
 			// Кнопки "влево/вправо"
 			navigation: {
@@ -181,6 +181,7 @@ function initSliders() {
 			}
 		});
 	}
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
