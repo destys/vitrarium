@@ -47,3 +47,19 @@ document.addEventListener("beforePopupClose", function (e) {
     }
     console.log('currentPopup: ', currentPopup);
 });
+
+//========================================================================================================================================================
+
+// Mobile menu
+
+const menuItems = document.querySelectorAll('.menu-item-has-children');
+
+if (menuItems.length) {
+    menuItems.forEach(item => {
+        item.addEventListener('click', (el) => {
+            if (el.target.classList.contains('menu-item-has-children') || el.target.parentNode.classList.contains('menu-item-has-children')) {
+                item.classList.toggle('_active');
+            }
+        })
+    })
+}

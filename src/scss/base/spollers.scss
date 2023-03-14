@@ -12,6 +12,7 @@
 }
 // Заголовок спойлера
 .spollers__title {
+	
 	padding-bottom: rem(14);
 	border-bottom: 1px solid $mainColor;
 	font-weight: 500;
@@ -29,7 +30,7 @@
 			content: "";
 			position: absolute;
 			right: 0;
-			top: 50%;
+			top: 9px;
 			background-color: $darkColor;
 			height: 2px;
 			width: 18px;
