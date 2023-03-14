@@ -24,6 +24,17 @@ body::after {
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
+
+	&__close {
+		width: rem(18);
+		height: rem(18);
+		position: absolute;
+		top: rem(20);
+		right: rem(20);
+		z-index: 1;
+		background-color: transparent;
+		color: #fff;
+	}
 }
 .popup_show {
 	z-index: 150;
@@ -50,15 +61,15 @@ body::after {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
+	background-color: transparent;
 	width: 100%;
-	max-width: 900px;
+	max-width: 440px;
 	border-radius: 10px;
 	.lock & {
 		visibility: visible;
 	}
 }
+
 
 #video {
 	.popup {

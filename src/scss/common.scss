@@ -10,6 +10,8 @@ a {
 
 .intro {
     margin-bottom: rem(60);
+    position: relative;
+   // z-index: 1000;
 
     img {
         width: 100%;

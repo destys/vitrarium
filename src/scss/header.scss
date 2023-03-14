@@ -184,8 +184,8 @@
 
 			.sub-menu {
 				position: absolute;
-				top: 100%;
-				left: 0;
+				top: -9999px;
+				left: -9999px;
 				z-index: -1;
 				opacity: 0;
 
@@ -231,6 +231,10 @@
 					}
 
 					.sub-menu {
+						width: auto;
+						height: auto;
+						top: 100%;
+						left: 0;
 						opacity: 1;
 						z-index: 100;
 
@@ -266,7 +270,7 @@
 		.burger & {
 			text-align: center;
 			padding: rem(15) 0;
-			
+
 			&:not(:last-child) {
 				border-bottom: 1px solid $mainColor;
 			}

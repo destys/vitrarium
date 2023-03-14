@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Услуга | Витрариум"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <!-- Intro block -->
+            <section class="intro intro__image-ibg">
+                    <img data-src="@img/services/banner.jpg" alt="banner">
+                <div class="intro__container">
+                    <div class="intro__content content-intro">
+                        <div class="content-intro__title">ПОНРАВИЛИСЬ НАШИ РАБОТЫ?
+                            СВЯЖИТЕСЬ С НАМИ:</div>
+                        <div class="content-intro__links">
+                            <a href="#" class="content-intro__link _icon-wa">WhatsApp</a>
+                            <a href="#" class="content-intro__link _icon-vk">ВКонтакте</a>
+                        </div>
+                        <div class="content-intro__subtitle">или оставьте заявку:</div>
+                        <form action="" class="content-intro__form form">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
+                                class="input">
+                            <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
+                                class="input">
+                            <div class="checkbox">
+                                <input id="privacy_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                    value="1" name="form[]">
+                                <label for="privacy_1" class="checkbox__label">
+                                    <p class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности</a>
+                                    </p>
+                                </label>
+                            </div>
+                            <button type="submit" class="button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- /. Intro block -->
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

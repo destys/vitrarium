@@ -1,0 +1,105 @@
+.intro {
+    display: flex;
+    align-items: center;
+    height: rem(740);
+    // .intro__container
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    // .intro__form
+    &__content {
+        position: relative;
+        padding: rem(17) rem(26);
+        flex: 0 0 rem(477);
+
+        box-shadow: 0px 7px 10px 2px rgba(0, 0, 0, 0.25);
+        color: #fff;
+
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: -1%;
+            background: rgba(47, 58, 61, 0.8);
+            backdrop-filter: blur(7.5px);
+        }
+    }
+}
+.content-intro {
+    // .content-intro__title
+    &__title {
+        margin-bottom: rem(30);
+        font-weight: 500;
+        font-size: rem(24);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    // .content-intro__links
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
+        gap: rem(20);
+        margin-bottom: rem(50);
+    }
+    // .content-intro__link
+    &__link {
+        padding: rem(13) rem(27);
+        border: 1px solid;
+        border-radius: 25px;
+
+        &:hover{
+            color: $lightColor;
+        }
+    }
+    // .content-intro__subtitle
+    &__subtitle {
+        margin-bottom: rem(30);
+        font-size: rem(20);
+        text-align: center;
+    }
+    // .content-intro__form
+    &__form {
+        text-align: center;
+
+        .input {
+            margin-bottom: rem(30);
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        .checkbox {
+            margin-bottom: rem(30);
+            text-align: left;
+
+            // .checkbox__input
+            &__input {
+            }
+            // .checkbox__label
+            &__label {
+            }
+            // .checkbox__text
+            &__text {
+                a {
+                    text-decoration: underline !important;
+
+                    &:hover{
+                        color: $lightColor;
+                    }
+                }
+            }
+        }
+        .button {
+            margin: 0 auto;
+        }
+    }
+}

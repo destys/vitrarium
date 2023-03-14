@@ -1,8 +1,30 @@
 <div id="callback" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+			<button data-close type="button" class="popup__close  _icon-cross"></button>
+			<div class="intro__content content-intro">
+				<div class="content-intro__title">ПОНРАВИЛИСЬ НАШИ РАБОТЫ?
+					СВЯЖИТЕСЬ С НАМИ:</div>
+				<div class="content-intro__links">
+					<a href="#" class="content-intro__link _icon-wa">WhatsApp</a>
+					<a href="#" class="content-intro__link _icon-vk">ВКонтакте</a>
+				</div>
+				<div class="content-intro__subtitle">или оставьте заявку:</div>
+				<form action="" class="content-intro__form form">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
+						class="input">
+					<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
+						class="input">
+					<div class="checkbox">
+						<input id="privacy_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+							name="form[]">
+						<label for="privacy_1" class="checkbox__label">
+							<p class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности</a>
+							</p>
+						</label>
+					</div>
+					<button type="submit" class="button">Отправить</button>
+				</form>
 			</div>
 		</div>
 	</div>

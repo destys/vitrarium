@@ -17,8 +17,15 @@
 	text-transform: uppercase;
 	width: fit-content;
 
+	transition: background 0.4s ease;
+
+	&:active {
+		box-shadow: none;
+	}
+
 	@media (any-hover: hover) {
 		&:hover {
+			background-color: darken($color: $lightColor, $amount: 4);
 		}
 	}
 	&._fw {
