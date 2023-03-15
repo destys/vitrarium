@@ -116,7 +116,7 @@
 	&__actions {
 		display: flex;
 		align-items: center;
-		@include adaptiveValue("gap", 90, 30);
+		@include adaptiveValue("gap", 50, 30);
 		font-size: rem(14);
 
 		@media (min-width: $mobile) {
@@ -291,6 +291,7 @@
 .actions-bottom-header {
 	// .actions-bottom-header__callback
 	&__callback {
+		white-space: nowrap;
 		font-weight: 500;
 		color: $darkColor;
 
@@ -315,6 +316,48 @@
 
 		@media (min-width: $tablet) {
 			font-size: rem(16);
+		}
+	}
+	// .actions-bottom-header__cart
+	&__cart {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: rem(5);
+		flex: 0 0 rem(30);
+		height: rem(30);
+		//background-color: $lightColor;
+		border-radius: 50%;
+		font-size: rem(21);
+		color: $darkColor;
+
+		position: relative;
+		transition: background 0.4s ease, color 0.4s ease;
+
+		&:hover {
+			background-color: $darkColor;
+			color: #fff;
+		}
+
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			border-radius: 50%;
+			width: rem(13);
+			height: rem(13);
+
+			position: absolute;
+			top: rem(0);
+			right: rem(0);
+			z-index: 1;
+
+			line-height: 1;
+			font-size: rem(10);
+			color: #fff;
+
+			background-color: $darkColor;
 		}
 	}
 }

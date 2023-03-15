@@ -50,3 +50,36 @@
 		</div>
 	</div>
 </div>
+
+<div id="cart" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content cart">
+			<button data-close type="button" class="popup__close _icon-cross"></button>
+			<div class="popup__text">
+				<div class="cart__title">Корзина</div>
+				<div class="cart__empty">В корзине ничего нет</div>
+				<div class="cart__list">
+				</div>
+				<div class="cart__total">
+					<span>Сумма:</span><span class="total">107 000 ₽</span>
+				</div>
+				<form action="#" class="cart__form form">
+					<input type="hidden" name="products" value="">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
+						class="input">
+					<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
+						class="input">
+					<div class="checkbox">
+						<input id="privacy_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+							name="form[]">
+						<label for="privacy_2" class="checkbox__label">
+							<p class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности</a>
+							</p>
+						</label>
+					</div>
+					<button type="submit" class="button">заказать расчет</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

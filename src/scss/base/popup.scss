@@ -70,7 +70,6 @@ body::after {
 	}
 }
 
-
 #video {
 	.popup {
 		&__close {
@@ -120,3 +119,116 @@ body::after {
 	}
 }
 
+#cart .cart {
+	padding: rem(18) rem(21);
+	background-color: #fff;
+	max-width: rem(688);
+
+	&__title {
+		margin-bottom: rem(30);
+		padding-bottom: rem(18);
+		border-bottom: 1px solid #888888;
+		font-weight: 600;
+		font-size: rem(20);
+	}
+
+	&__empty {
+		margin-bottom: rem(40);
+		font-weight: 600;
+		font-size: rem(24);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+
+		border-bottom: 1px solid #888;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: rem(16);
+
+		.item-cart {
+			&__thumb {
+				margin-right: rem(30);
+				flex: 0 0 rem(67);
+				width: rem(67);
+				height: rem(90);
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+
+			&__title {
+				margin-right: rem(30);
+				flex: 0 0 rem(210);
+				font-weight: 500;
+			}
+
+			&__quantity {
+				margin-right: rem(60);
+			}
+
+			&__price {
+				margin-right: rem(68);
+				white-space: nowrap;
+			}
+
+			&__delete {
+				margin-left: auto;
+				width: rem(20);
+				height: rem(20);
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__total {
+		margin-top: rem(20);
+		margin-bottom: rem(41);
+		font-weight: 600;
+		font-size: rem(20);
+		color: $lightColor;
+		text-align: right;
+	}
+
+	.popup__close {
+		color: $mainColor;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		.input {
+			margin-bottom: rem(30);
+			border-bottom: 1px solid;
+			color: $mainColor;
+			border-radius: 0;
+		}
+
+		.checkbox {
+			margin-bottom: rem(30);
+
+			&__input {
+				&:checked + label::before {
+					color: $mainColor;
+				}
+			}
+
+			&__label {
+				&::before {
+					border-color: $mainColor;
+				}
+			}
+		}
+
+		.button {
+			margin: 0 auto;
+		}
+	}
+}

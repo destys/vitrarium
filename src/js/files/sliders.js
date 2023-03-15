@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Autoplay, EffectCards, EffectFade, FreeMode, Navigation } from 'swiper';
+import Swiper, { Autoplay, FreeMode, Navigation, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -127,14 +127,14 @@ function initSliders() {
 			preloadImages: true,
 			//lazy: true,
 
-			
+
 			// Эффекты
 			//effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			
+
 
 			// Пагинация
 			/*
@@ -158,7 +158,7 @@ function initSliders() {
 			},
 
 			// Брейкпоинты
-			
+
 			breakpoints: {
 				320: {
 					slidesPerView: 2,
@@ -181,14 +181,57 @@ function initSliders() {
 					spaceBetween: 24,
 				},
 			},
-			
+
 			// События
 			on: {
 
 			}
 		});
 	}
+	if (document.querySelector('.page-title__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.page-title__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая 
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			//autoHeight: true,
+			speed: 1500,
 
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			preloadImages: true,
+			//lazy: true,
+
+
+			// Эффекты
+			//effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+
+			// Пагинация
+			
+			pagination: {
+				el: '.page-title__pagination',
+				clickable: true,
+			},
+			
+
+			// Скроллбар
+
+			/* scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			}, */
+		});
+	}
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

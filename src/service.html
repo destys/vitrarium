@@ -10,7 +10,7 @@
         <main class="page">
             <!-- Intro block -->
             <section class="intro intro__image-ibg">
-                    <img data-src="@img/services/banner.jpg" alt="banner">
+                <img data-src="@img/services/banner.jpg" alt="banner">
                 <div class="intro__container">
                     <div class="intro__content content-intro">
                         <div class="content-intro__title">ПОНРАВИЛИСЬ НАШИ РАБОТЫ?
@@ -21,10 +21,10 @@
                         </div>
                         <div class="content-intro__subtitle">или оставьте заявку:</div>
                         <form action="" class="content-intro__form form">
-                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
-                                class="input">
-                            <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
-                                class="input">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                placeholder="Ваше имя*" class="input">
+                            <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+                                placeholder="Ваш телефон*" class="input">
                             <div class="checkbox">
                                 <input id="privacy_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
                                     value="1" name="form[]">
@@ -39,7 +39,75 @@
                 </div>
             </section>
             <!-- /. Intro block -->
-
+            <section class="page-title">
+                <div class="page-title__container">
+                    <h1 class="page-title__title _section-title">Стеклянные перегородки - современный тренд в дизайне
+                        интерьеров, а также очень стильный и безопасный способ сохранить пространство</h1>
+                    <div class="page-title__slider swiper">
+                        <div class="page-title__wrapper swiper-wrapper">
+                            <div class="page-title__slide slide-page-title swiper-slide">
+                                <div class="slide-page-title__text">
+                                    <p>Самые популярные виды стекла AGC (японский бренд, производство Россия) -
+                                        осветленное <strong>Crystalvision</strong> и бесцветное <strong>Clear</strong>
+                                    </p>
+                                    <p>Важнее всего для нас - безопасность Вас и Ваших близких. Поэтому мы используем
+                                        только закаленные стекла толщиной 8мм и 10мм. При повреждении наши стекла
+                                        распадаются на безопасные осколки,которыми невозможно пораниться.
+                                    </p>
+                                </div>
+                                <div class="slide-page-title__image">
+                                    <img data-src="@img/services/page-title1.jpg" alt="img1">
+                                </div>
+                            </div>
+                            <div class="page-title__slide slide-page-title swiper-slide">
+                                <div class="slide-page-title__text">
+                                    <p>
+                                        Фурнитура из Германии - это утонченный дизайн и надежность, которая не вызывает
+                                        сомнений. Стильная фурнитура в перегородках европейского качества обеспечивает
+                                        их долговечное использование без ремонтов, неполадок и протеканий на протяжении
+                                        долгих лет.
+                                    </p>
+                                </div>
+                                <div class="slide-page-title__image">
+                                    <img data-src="@img/services/page-title2.jpg" alt="img1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-title__pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="catalog__container">
+                    <h2 class="catalog__title">Душевые стеклянные ограждения</h2>
+                    <div class="catalog__list">
+                        @@include('html/_catalog-item.htm',{
+                        "id":"123-4",
+                        "title":"Угловая трапеция",
+                        "old_price":"58 000 ₽",
+                        "price":"53 000 ₽"
+                        })
+                        @@include('html/_catalog-item.htm',{
+                        "id":"123-5",
+                        "title":"Угловая 'парус' + дверь",
+                        "old_price":"",
+                        "price":"153 000 ₽"
+                        })
+                        @@include('html/_catalog-item.htm',{
+                        "id":"123-6",
+                        "title":"Угловая трапеция",
+                        "old_price":"41 000 ₽",
+                        "price":"32 000 ₽"
+                        })
+                        @@include('html/_catalog-item.htm',{
+                        "id":"123-7",
+                        "title":"Угловая трапеция",
+                        "old_price":"11 000 ₽",
+                        "price":"9 000 ₽"
+                        })
+                    </div>
+                </div>
+            </section>
         </main>
         @@include('html/_footer.htm',{})
     </div>

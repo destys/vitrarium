@@ -12,7 +12,7 @@
 [class*="_icon-"] {
 	display: flex;
 	align-items: center;
-	
+
 	&:before {
 		@extend %ic;
 		display: inline-block;
@@ -20,7 +20,13 @@
 	}
 }
 
-._icon-wa:before {
+._icon-check:before {
+	content: "\e908";
+}
+._icon-cart:before {
+	content: "\e909";
+}
+.i_con-wa:before {
 	content: "\e900";
 }
 ._icon-clock:before {
