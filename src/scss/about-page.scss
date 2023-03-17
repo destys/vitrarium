@@ -1,0 +1,169 @@
+.about-page {
+    margin-top: rem(73);
+    margin-bottom: rem(66);
+
+    // .about-page__container
+    &__container {
+    }
+    // .about-page__title
+    &__title {
+        margin-bottom: rem(40);
+        font-weight: 500;
+        font-size: rem(30);
+        text-transform: uppercase;
+    }
+    // .about-page__content
+    &__content {
+        h2 {
+            margin: rem(40) 0 rem(30);
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: rem(20);
+        }
+
+        ul {
+            margin-bottom: rem(20);
+            li {
+                list-style: inside;
+            }
+        }
+
+        ol {
+            margin-bottom: rem(20);
+            list-style: decimal inside;
+        }
+    }
+}
+//========================================================================================================================================================
+.reviews {
+    margin-bottom: rem(80);
+    // .reviews__container
+    &__container {
+    }
+    // .reviews__title
+    &__title {
+    }
+    // .reviews__slider
+    &__slider {
+        position: relative;
+    }
+    // .reviews__wrapper
+    &__wrapper {
+    }
+    // .reviews__slide
+    &__slide {
+        padding: rem(27) 0 rem(72);
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            z-index: -1;
+            background: url("@img/reviews/border.svg") center center no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // .reviews__nav
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        transform: translate(0px, -50%);
+        z-index: 3;
+        width: 100%;
+
+        .prev {
+        }
+        .next {
+            transform: rotate(-180deg);
+        }
+    }
+}
+.slide-reviews {
+    // .slide-reviews__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: rem(21) rem(23);
+        background: linear-gradient(76.9deg, #e4e6e9 7.9%, #ffffff 104.77%);
+        border: 1px solid #f2f2f7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+            padding: rem(41) rem(46);
+        }
+    }
+    // .slide-reviews__text
+    &__text {
+        font-weight: 500;
+        min-height: rem(133);
+    }
+    // .slide-reviews__avatar
+    &__avatar {
+        margin: 0 auto;
+        flex: 0 0 rem(91);
+        width: rem(91);
+        height: rem(91);
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-width: $mobileSmall) {
+            margin: 0;
+        }
+    }
+}
+//========================================================================================================================================================
+.callback {
+    margin-bottom: rem(60);
+
+    @media (min-width: $mobile) {
+        background: url("@img/callback.jpg") 0 0 no-repeat;
+        background-size: cover;
+    }
+    
+    // .callback__container
+    &__container {
+        @media (min-width: $mobile) {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .content-intro {
+            background: #93969a;
+            box-shadow: none;
+            border-left: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+            flex: 0 0 rem(449);
+
+            // .content-intro__title
+            &__title {
+            }
+            // .content-intro__links
+            &__links {
+            }
+            // .content-intro__link
+            &__link {
+            }
+            // .content-intro__subtitle
+            &__subtitle {
+            }
+            // .content-intro__form
+            &__form {
+            }
+        }
+    }
+}

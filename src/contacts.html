@@ -8,38 +8,56 @@
     <div class="wrapper">
         @@include('html/_header.htm',{})
         <main class="page">
-            <!-- Intro block -->
-            <section class="intro intro__image-ibg">
-                    <img data-src="@img/services/banner.jpg" alt="banner">
-                <div class="intro__container">
-                    <div class="intro__content content-intro">
-                        <div class="content-intro__title">ПОНРАВИЛИСЬ НАШИ РАБОТЫ?
-                            СВЯЖИТЕСЬ С НАМИ:</div>
-                        <div class="content-intro__links">
-                            <a href="#" class="content-intro__link _icon-wa">WhatsApp</a>
-                            <a href="#" class="content-intro__link _icon-vk">ВКонтакте</a>
+            <!-- Contacts block -->
+            <section class="contacts">
+                <div class="contacts__container">
+                    <h1 class="contacts__title">Контакты</h1>
+                    <div class="contacts__content">
+                        <div class="contacts__list">
+                            <p class="contacts__item _icon-location">г. Москва, ул. хххххххххххххх</p>
+                            <p class="contacts__item _icon-clock">Ежедневно с 09:00 до 23:00</p>
+                            <a href="#" class="contacts__item _icon-phone">+7 (999) 777 90 78</a>
+                            <a href="#" class="contacts__item _icon-vk">ВКонтакте</a>
+                            <a href="#" class="contacts__item _icon-mail">info@ххххххххх</a>
+                            <a href="#" class="contacts__item _icon-tg">Telegram</a>
+                            <a href="#" class="contacts__item _icon-wa">WhatsApp</a>
                         </div>
-                        <div class="content-intro__subtitle">или оставьте заявку:</div>
-                        <form action="" class="content-intro__form form">
-                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
-                                class="input">
-                            <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
-                                class="input">
-                            <div class="checkbox">
-                                <input id="privacy_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
-                                    value="1" name="form[]">
-                                <label for="privacy_1" class="checkbox__label">
-                                    <p class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности</a>
-                                    </p>
-                                </label>
+                        <div class="contacts__map">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?from=tabbar&indoorLevel=1&ll=37.413130%2C55.683995&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzA3NDQ2MTUStwHQoNC-0YHRgdC40Y8sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQntC00LjQvdGG0L7QstGB0LrQuNC5INCz0L7RgNC-0LTRgdC60L7QuSDQvtC60YDRg9CzLCDRgNCw0LHQvtGH0LjQuSDQv9C-0YHRkdC70L7QuiDQl9Cw0YDQtdGH0YzQtSwg0KLQvtGA0LPQvtCy0LDRjyDRg9C70LjRhtCwLCDRgTIiCg2yphVCFZu8XkI%2C&source=serp_navig&z=16.2"
+                                frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                        <div class="contacts__form">
+                            <div class="intro__content content-intro">
+                                <div class="content-intro__title">Есть вопросы? <br />
+                                    свяжитесь с нами:</div>
+                                <div class="content-intro__links">
+                                    <a href="#" class="content-intro__link _icon-wa">WhatsApp</a>
+                                    <a href="#" class="content-intro__link _icon-vk">ВКонтакте</a>
+                                </div>
+                                <div class="content-intro__subtitle">или оставьте заявку:</div>
+                                <form action="" class="content-intro__form form">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="Ваше имя*" class="input">
+                                    <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+                                        placeholder="Ваш телефон*" class="input">
+                                    <div class="checkbox">
+                                        <input id="privacy_1" data-error="Ошибка" class="checkbox__input"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="privacy_1" class="checkbox__label">
+                                            <p class="checkbox__text">Согласен с <a href="#">политикой
+                                                    конфиденциальности</a>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="button">Отправить</button>
+                                </form>
                             </div>
-                            <button type="submit" class="button">Отправить</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- /. Intro block -->
-
+            <!-- /. Contacts block -->
         </main>
         @@include('html/_footer.htm',{})
     </div>

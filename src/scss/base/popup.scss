@@ -147,13 +147,16 @@ body::after {
 
 	&__item {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		margin-bottom: rem(16);
 
+		@media (min-width: $mobile) {
+			flex-direction: row;
+		}
+
 		.item-cart {
 			&__thumb {
-				margin-right: rem(30);
-				flex: 0 0 rem(67);
 				width: rem(67);
 				height: rem(90);
 
@@ -162,28 +165,44 @@ body::after {
 					height: 100%;
 					object-fit: contain;
 				}
+
+				@media (min-width: $mobile) {
+					margin-right: rem(30);
+					flex: 0 0 rem(67);
+				}
 			}
 
 			&__title {
-				margin-right: rem(30);
-				flex: 0 0 rem(210);
 				font-weight: 500;
+
+				@media (min-width: $mobile) {
+					margin-right: rem(30);
+					flex: 0 0 rem(210);
+				}
 			}
 
 			&__quantity {
-				margin-right: rem(60);
+				@media (min-width: $mobile) {
+					margin-right: rem(60);
+				}
 			}
 
 			&__price {
-				margin-right: rem(68);
 				white-space: nowrap;
+
+				@media (min-width: $mobile) {
+					margin-right: rem(68);
+				}
 			}
 
 			&__delete {
-				margin-left: auto;
 				width: rem(20);
 				height: rem(20);
 				cursor: pointer;
+
+				@media (min-width: $mobile) {
+					margin-left: auto;
+				}
 			}
 		}
 	}

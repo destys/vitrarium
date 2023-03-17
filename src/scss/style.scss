@@ -54,6 +54,10 @@ $responsiveType: 1;
 body {
 	line-height: math.div(19, 16);
 
+	@media (max-width: $mobile) {
+		font-size: rem(14);
+	}
+
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
@@ -136,7 +140,10 @@ body {
 @import "header";
 @import "footer";
 @import "catalog-item";
+@import "quiz";
 
 // Подключение стилей отдельных страниц
 @import "home";
 @import "services";
+@import "about-page";
+@import "contacts";

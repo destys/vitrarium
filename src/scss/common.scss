@@ -23,4 +23,5 @@ a {
 h2 {
     font-weight: 500;
     font-size: rem(30);
+    @include adaptiveValue("font-size", 30, 21);
 }

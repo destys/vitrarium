@@ -18,12 +18,12 @@ textarea {
 	border-radius: 10px;
 
 	font-weight: 500;
-	font-size: rem(18);
+	font-size: rem(16);
 	color: $mainColor;
 
 	&::placeholder {
 		font-weight: 500;
-		font-size: rem(18);
+		font-size: inherit;
 		opacity: 0.5;
 	}
 	&._focus {
