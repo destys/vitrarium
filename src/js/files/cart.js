@@ -56,7 +56,7 @@ function delFromCart(el) {
         renderList();
 
         localStorage.setItem('cart', JSON.stringify(productInCart));
-        
+
     }
 }
 
@@ -175,5 +175,8 @@ document.addEventListener("beforePopupClose", function (e) {
     }
 });
 
-cartList.addEventListener('click', delFromCart);
-cartList.addEventListener('click', changeQuantityInCart);
+if (cartList) {
+    cartList.addEventListener('click', delFromCart);
+    cartList.addEventListener('click', changeQuantityInCart);
+}
+
