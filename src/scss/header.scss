@@ -100,6 +100,7 @@
 	&__logo {
 		@media (max-width: $mobile) {
 			img {
+				width: rem(87);
 				height: rem(40);
 			}
 		}

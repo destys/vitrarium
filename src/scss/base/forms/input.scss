@@ -28,7 +28,8 @@ textarea {
 	}
 	&._focus {
 	}
-	&._error {
+	&._form-error {
+		border-color: red !important;
 	}
 }
 textarea.input {

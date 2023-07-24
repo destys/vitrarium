@@ -223,11 +223,15 @@ body::after {
 	&__form {
 		display: flex;
 		flex-direction: column;
-		.input {
-			margin-bottom: rem(30);
-			border-bottom: 1px solid;
-			color: $mainColor;
-			border-radius: 0;
+		.form__row {
+			margin-bottom: rem(20);
+
+			.input {
+				border: 0;
+				border-bottom: 1px solid;
+				border-radius: 0;
+				color: $mainColor;
+			}
 		}
 
 		.checkbox {

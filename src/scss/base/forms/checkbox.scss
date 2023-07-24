@@ -12,6 +12,9 @@
 		&:checked + .checkbox__label:before {
 			color: #fff;
 		}
+		&._form-error + label::before {
+			border-color: red;
+		}
 	}
 	// .checkbox__label
 	&__label {

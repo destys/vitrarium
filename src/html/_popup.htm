@@ -10,14 +10,20 @@
 					<a href="#" class="content-intro__link _icon-vk">ВКонтакте</a>
 				</div>
 				<div class="content-intro__subtitle">или оставьте заявку:</div>
-				<form action="" class="content-intro__form form">
-					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
-						class="input">
-					<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
-						class="input">
+				<form action="" method="POST" class="content-intro__form form" data-dev
+					data-popup-message="#form-message">
+					<div class="input__wrapper">
+						<input autocomplete="off" type="text" name="name" data-required
+							data-error="Поле обязательно к заполнению" placeholder="Ваше имя*" class="input">
+					</div>
+					<div class="input__wrapper">
+						<input autocomplete="off" type="tel" name="phone" data-error="Поле обязательно к заполнению"
+							data-required placeholder="Ваш телефон*" class="input">
+					</div>
 					<div class="checkbox">
-						<input id="privacy_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-							name="form[]">
+						<input id="privacy_1"
+							data-error="Необходимо подтвердить согласие на обработку персональных данных"
+							class="checkbox__input" type="checkbox" value="1" name="form[]" data-required>
 						<label for="privacy_1" class="checkbox__label">
 							<p class="checkbox__text">Согласен с <a href="#">политикой конфиденциальности</a>
 							</p>
@@ -63,12 +69,16 @@
 				<div class="cart__total">
 					<span>Сумма:</span><span class="total">107 000 ₽</span>
 				</div>
-				<form action="#" class="cart__form form">
-					<input type="hidden" name="products" value="">
-					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
-						class="input">
-					<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*"
-						class="input">
+				<form action="#" class="cart__form form" data-ajax data-dev>
+					<input type="hidden" name="products" value="" />
+					<div class="form__row">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя*"
+							class="input" data-required="" />
+					</div>
+					<div class="form__row">
+						<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+							placeholder="Ваш телефон*" class="input" data-required="" />
+					</div>
 					<div class="checkbox">
 						<input id="privacy_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
 							name="form[]">
@@ -79,6 +89,21 @@
 					</div>
 					<button type="submit" class="button">заказать расчет</button>
 				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="form-message" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-cross"></button>
+			<div class="popup__text">
+				<div class="message">
+					<h2>Спасибо</h2>
+					<h3>Ваша заявка принята</h3>
+					<p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+				</div>
 			</div>
 		</div>
 	</div>
